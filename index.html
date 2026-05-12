@@ -6,26 +6,23 @@
 <link rel="icon" type="image/png" href="KKDigital.png">
 <link rel="stylesheet" href="style.css">
 <style>
-#hero{min-height:100svh;display:flex;align-items:center;padding:calc(var(--nav-h) + 24px) clamp(16px,4vw,56px) 48px}
+#hero{min-height:100svh;display:flex;align-items:center;padding:calc(var(--nav-h) + 28px) clamp(16px,4vw,56px) 48px}
 .hero-inner{max-width:1200px;margin:0 auto;width:100%}
 h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,6.5vw,5.5rem);line-height:1.03;letter-spacing:-.035em;color:#fff;margin-bottom:16px}
-.hero-sub{font-size:clamp(1rem,1.8vw,1.15rem);color:var(--muted);line-height:1.7;font-weight:300;max-width:520px;margin-bottom:32px}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0}
-#services{padding:clamp(50px,7vw,90px) clamp(16px,4vw,56px)}
-.about-strip{padding:clamp(50px,7vw,90px) clamp(16px,4vw,56px)}
-.about-strip-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:16px;max-width:680px}
-.about-strip-inner p{font-size:clamp(.97rem,1.6vw,1.08rem);color:var(--muted);line-height:1.8;font-weight:300}
+.hero-sub{font-size:clamp(1rem,1.8vw,1.15rem);color:var(--muted);line-height:1.7;font-weight:400;max-width:520px;margin-bottom:28px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+#services{padding:clamp(48px,6vw,86px) clamp(16px,4vw,56px)}
 </style>
 </head>
 <body>
 <nav id="navbar"><div class="nav-inner">
   <a href="index.html" class="nav-logo">KK Digital</a>
   <ul class="nav-links">
-    <li><a href="webdesign.html">Уеб Дизайн</a></li>
-    <li><a href="smm.html">Social Media</a></li>
-    <li><a href="ads.html">Meta &amp; Google Ads</a></li>
-    <li><a href="google.html">Google</a></li>
-    <li><a href="about.html">За Мен</a></li>
+    <li><a href="webdesign.html"><span class="full">Уеб Дизайн</span><span class="short">Уеб</span></a></li>
+    <li><a href="smm.html"><span class="full">Social Media</span><span class="short">Social</span></a></li>
+    <li><a href="ads.html"><span class="full">Meta &amp; Google Ads</span><span class="short">Ads</span></a></li>
+    <li><a href="google.html"><span class="full">Google Интеграция</span><span class="short">Google</span></a></li>
+    <li><a href="about.html"><span class="full">За Мен</span><span class="short">За Мен</span></a></li>
   </ul>
   <a href="contact.html" class="nav-contact">Контакт</a>
 </div></nav>
@@ -35,8 +32,7 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
       <h1 class="hero-h1 reveal">Онлайн маркетинг за<br><span class="grad-text">твоя бизнес.</span></h1>
       <p class="hero-sub reveal d1">Искаш да промотираш бизнеса си онлайн, но не знаеш как? На правилното място си!</p>
       <div class="hero-btns reveal d2">
-        <a href="#services" class="btn btn-primary">Услуги</a>
-        <a href="contact.html" class="btn btn-outline">Свържи се с мен</a>
+        <a href="contact.html" class="btn btn-primary">Свържи се с мен</a>
         <a href="about.html" class="btn btn-ghost">За мен</a>
       </div>
     </div>
@@ -45,8 +41,8 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
   <section id="services">
     <div class="inner">
       <h2 class="section-title reveal">Услуги</h2>
-      <p class="section-sub reveal">Услуги които предлагам</p>
-      <div class="service-cards reveal d1">
+      <p class="section-sub reveal d1">Услуги които предлагам</p>
+      <div class="service-cards reveal d2">
         <a href="webdesign.html" class="service-card">
           <div class="service-card-icon">🖥️</div>
           <h3>Уеб Дизайн</h3>
@@ -61,18 +57,18 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
         </a>
         <a href="ads.html" class="service-card">
           <div class="service-card-icon">🎯</div>
-          <h3>Meta &amp; Google Реклами</h3>
+          <h3>Meta &amp; Google Ads</h3>
           <p>Facebook, Instagram, YouTube, Google реклами за интересувана аудитория</p>
           <span class="service-card-btn">Научи повече →</span>
         </a>
         <a href="google.html" class="service-card">
           <div class="service-card-icon">📍</div>
-          <h3>Google Присъствие</h3>
+          <h3>Google Интеграция</h3>
           <p>Появи се когато те търсят в Google Maps</p>
           <span class="service-card-btn">Научи повече →</span>
         </a>
       </div>
-      <a href="about.html" class="work-link reveal d2">Разгледай за мен и моята работа →</a>
+      <a href="about.html" class="work-link reveal d3">Разгледай за мен и моята работа →</a>
     </div>
   </section>
   <div class="divider"></div>
@@ -87,7 +83,7 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
 </main>
 <footer><div class="footer-inner">
   <a href="index.html" class="footer-logo">KK Digital</a>
-  <ul class="footer-links"><li><a href="webdesign.html">Уеб Дизайн</a></li><li><a href="smm.html">Social Media</a></li><li><a href="ads.html">Meta &amp; Google Ads</a></li><li><a href="google.html">Google</a></li><li><a href="about.html">За Мен</a></li><li><a href="contact.html">Контакт</a></li></ul>
+  <ul class="footer-links"><li><a href="webdesign.html">Уеб Дизайн</a></li><li><a href="smm.html">Social Media</a></li><li><a href="ads.html">Meta &amp; Google Ads</a></li><li><a href="google.html">Google Интеграция</a></li><li><a href="about.html">За Мен</a></li><li><a href="contact.html">Контакт</a></li></ul>
   <p class="footer-copy">© 2026 KK Digital · Кристиан · София</p>
 </div></footer>
 <script src="main.js"></script>
