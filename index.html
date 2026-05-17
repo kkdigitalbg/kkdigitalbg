@@ -6,30 +6,41 @@
 <link rel="icon" type="image/png" href="KKDigital.png">
 <link rel="stylesheet" href="style.css">
 <style>
-#hero{display:flex;align-items:center;padding:calc(var(--nav-h) + clamp(40px,6vw,80px)) clamp(16px,4vw,56px) clamp(32px,4vw,52px)}
-.hero-inner{max-width:1200px;margin:0 auto;width:100%}
-h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,6.5vw,5.5rem);line-height:1.03;letter-spacing:-.035em;color:#fff;margin-bottom:16px}
-.hero-sub{font-size:clamp(1rem,1.8vw,1.15rem);color:var(--muted);line-height:1.7;font-weight:400;max-width:520px;margin-bottom:28px}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
-#services{padding:clamp(48px,6vw,86px) clamp(16px,4vw,56px)}
+#hero{padding:calc(var(--nav-h) + clamp(40px,6vw,70px)) clamp(16px,4vw,56px) clamp(28px,3vw,40px)}
+h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.4rem,6vw,5.2rem);line-height:1.03;letter-spacing:-.035em;color:#fff;margin-bottom:14px}
+.hero-sub{font-size:clamp(1rem,1.8vw,1.15rem);color:var(--muted);line-height:1.7;font-weight:400;max-width:520px;margin-bottom:22px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+#services{padding:0 clamp(16px,4vw,56px) clamp(48px,6vw,80px)}
 </style>
 </head>
 <body>
-<nav id="navbar"><div class="nav-inner">
-  <a href="index.html" class="nav-logo">KK Digital</a>
-  <ul class="nav-links">
-    <li><a href="webdesign.html"><span class="full">Уеб Дизайн</span><span class="short">Уеб</span></a></li>
-    <li><a href="smm.html"><span class="full">Social Media</span><span class="short">Social</span></a></li>
-    <li><a href="ads.html"><span class="full">Meta &amp; Google Ads</span><span class="short">Ads</span></a></li>
-    <li><a href="google.html"><span class="full">Google Интеграция</span><span class="short">Google</span></a></li>
-    <li><a href="work.html"><span class="full">Работата Ми</span><span class="short">Проекти</span></a></li>
-    <li><a href="about.html"><span class="full">За Мен</span><span class="short">За Мен</span></a></li>
-  </ul>
-  <a href="contact.html" class="nav-contact">Контакт</a>
-</div></nav>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">KK Digital</a>
+    <ul class="nav-links">
+      <li><a href="webdesign.html">Уеб Дизайн</a></li>
+      <li><a href="smm.html">Social Media</a></li>
+      <li><a href="ads.html">Meta &amp; Google Ads</a></li>
+      <li><a href="google.html">Google Интеграция</a></li>
+      <li><a href="work.html">Работата Ми</a></li>
+      <li><a href="about.html">За Мен</a></li>
+    </ul>
+    <a href="contact.html" class="nav-contact">Контакт</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="webdesign.html">Уеб Дизайн</a>
+  <a href="smm.html">Social Media</a>
+  <a href="ads.html">Meta &amp; Google Ads</a>
+  <a href="google.html">Google Интеграция</a>
+  <a href="work.html">Работата Ми</a>
+  <a href="about.html">За Мен</a>
+  <a href="contact.html">Контакт</a>
+</div>
 <main>
   <section id="hero">
-    <div class="hero-inner">
+    <div class="inner">
       <h1 class="hero-h1 reveal">Онлайн маркетинг за<br><span class="grad-text">твоя бизнес.</span></h1>
       <p class="hero-sub reveal d1">Искаш да промотираш бизнеса си онлайн, но не знаеш как? На правилното място си!</p>
       <div class="hero-btns reveal d2">
@@ -38,7 +49,7 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
       </div>
     </div>
   </section>
-  <section id="services" style="padding-top:0">
+  <section id="services">
     <div class="inner">
       <h2 class="section-title reveal">Услуги</h2>
       <p class="section-sub reveal d1">Услуги които предлагам</p>
@@ -52,13 +63,13 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
         <a href="smm.html" class="service-card">
           <div class="service-card-icon">📱</div>
           <h3>Social Media Management</h3>
-          <p>Измисляне и обработване на Reels/TikTok видеа</p>
+          <p>Висококачествено видео съдържание за Instagram и TikTok</p>
           <span class="service-card-btn">Научи повече →</span>
         </a>
         <a href="ads.html" class="service-card">
           <div class="service-card-icon">🎯</div>
           <h3>Meta &amp; Google Ads</h3>
-          <p>Facebook, Instagram, YouTube, Google реклами за интересувана аудитория</p>
+          <p>Реклами в Facebook, Instagram, YouTube и Google</p>
           <span class="service-card-btn">Научи повече →</span>
         </a>
         <a href="google.html" class="service-card">
@@ -68,7 +79,7 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
           <span class="service-card-btn">Научи повече →</span>
         </a>
       </div>
-      <a href="work.html" class="work-link reveal d3">Разгледай моята работа →</a>
+      <a href="work.html" class="work-link reveal d3">👁 Разгледай работата ми</a>
     </div>
   </section>
   <div class="divider"></div>
@@ -83,7 +94,7 @@ h1.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.6rem,
 </main>
 <footer><div class="footer-inner">
   <a href="index.html" class="footer-logo">KK Digital</a>
-  <ul class="footer-links"><li><a href="webdesign.html">Уеб Дизайн</a></li><li><a href="smm.html">Social Media</a></li><li><a href="ads.html">Meta &amp; Google Ads</a></li><li><a href="google.html">Google Интеграция</a></li><li><a href="about.html">За Мен</a></li><li><a href="contact.html">Контакт</a></li></ul>
+  <ul class="footer-links"><li><a href="webdesign.html">Уеб Дизайн</a></li><li><a href="smm.html">Social Media</a></li><li><a href="ads.html">Meta &amp; Google Ads</a></li><li><a href="google.html">Google Интеграция</a></li><li><a href="work.html">Работата Ми</a></li><li><a href="about.html">За Мен</a></li><li><a href="contact.html">Контакт</a></li></ul>
   <p class="footer-copy">© 2026 KK Digital · Кристиан · София</p>
 </div></footer>
 <script src="main.js"></script>
