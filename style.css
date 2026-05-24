@@ -148,3 +148,6 @@ footer{border-top:1px solid var(--border);padding:20px clamp(16px,4vw,56px)}
 .footer-links a{text-decoration:none;color:var(--muted2);font-size:.74rem;transition:color .2s}
 .footer-links a:hover{color:var(--text)}
 @media(max-width:500px){.footer-links{display:none}}
+
+/* 3-card layout override for homepage */
+@media(min-width:800px){.service-cards.three-up{grid-template-columns:repeat(3,1fr)}}
